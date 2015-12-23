@@ -1,0 +1,156 @@
+body {
+	font-family: Microsoft YaHei;
+	margin: 0px;
+	background-color: #3a5066;
+}
+a{
+	color: #28b779;
+}
+a:visited{
+	color: #28b779;
+}
+a:hover{
+	color: #3dc58a;
+}
+button{
+	color: white;
+}
+button:hover{
+	color: white !important;
+}
+.cb{
+	clear: both;
+}
+.col-md-2-self{
+	width: 49px;
+	float: left;
+	padding-right: 0px;
+}
+.col-md-10-self{
+	float: left;
+	width: 335px;
+	padding-left: 0px;
+	margin-bottom: 20px;
+}
+.form-control-self{
+	border-radius: 0px !important;
+	margin-top: 0px !important;
+	height: 40px;
+	font-size: 14px;
+	border: 0px;
+}
+.login-hr{
+	margin-bottom: 40px !important;
+	border-top: 1px solid #788796;
+}
+.login-btn{
+	border-radius: 0px;
+	border: 0px;
+}
+#logo{
+	margin: 20px 10px;
+}
+.label-self{
+	margin-bottom: 0px;
+}
+.logo-div{
+	width: 343px;
+	margin: 0px auto !important;
+}
+.margin-center-alert{
+	text-align: center;
+	margin: 0px auto 10px auto !important;
+	width: 385px;
+}
+
+.margin-center-username{
+	float: left;
+	margin-left:107px;
+	margin-bottom: 17px;
+	width: 385px;
+}
+.margin-center-password{
+	float: left;
+	margin-left:122px;
+	width: 385px;
+}
+.margin-center-validata-code{
+	float: left;
+	margin-left:122px;
+	width: 385px;
+}
+.margin-center-btn{
+	float: left;
+	margin-left:122px;
+	margin-bottom: 17px;
+	width: 385px;
+}
+
+#login-form {
+	width: 600px;
+	height: 500px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.forget_password{
+	margin-top: 12px;
+	margin-left: 5px;
+	float: left;
+}
+#inputName, #inputPassword{
+	margin-top: 3px;
+}
+.register-btn-color{
+	line-height:23px;
+	color:white !important;
+	width: 160px;
+	height: 35px;
+	background-color: #28b779;
+}
+.register-btn-color:hover{
+	color:white !important;
+	background-color: #3dc58a;
+}
+.login-btn-color{
+	width: 160px;
+	height: 35px;
+	background-color: #49afcd;
+}
+.login-btn-color:hover{
+	background-color: #62b8d2;
+}
+.validate_code{
+	float: left;
+	width: 220px;
+}
+.validate_code_display{
+	float: right;
+	width: 160px;
+}
+.cannotsee{
+	margin-top: 12px;
+	margin-left: 5px;
+	float: left;
+}
+.check-code-img{
+	height: 40px;
+	background-color: white;
+}
+.remember_password{
+	float: right;
+	height: 33px;
+	line-height: 33px;
+	color: white;
+}
+.remember_password input{
+	margin-top: 11px; 
+}
+.remember_password div{
+	float: right;
+}
+
+

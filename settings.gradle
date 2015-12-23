@@ -1,0 +1,4 @@
+rootProject.name = 'loving-oauth2-service'
+
+include 'loving-security-oauth2'
+

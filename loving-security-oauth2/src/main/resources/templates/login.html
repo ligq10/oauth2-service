@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../static/css/lib/bootstrap.min.css" rel="stylesheet" th:href="@{/css/lib/bootstrap.min.css}" />
+<link href="../static/css/login.css" rel="stylesheet" th:href="@{/css/login.css}" />
+<!-- <script src="../static/js/lib/jquery-1.min.js" th:src="@{/js/lib/jquery-1.min.js}"></script> -->
+<script src="../static/js/login.js" th:src="@{/js/login/login.js}"></script>
+	
+<title>Login</title>
+</head>
+<body>
+	<form id="login-form" th:action="@{/login}" method="post"
+		class="form-horizontal">
+		<div id="logo" class="logo">
+			<div class="logo-div">
+				<img src="../static/image/logo-login.png" th:src="@{/image/logo-login.png}" />
+			</div>
+		</div>
+		<hr class="login-hr"/>
+        <div th:if="${param.error}" class="alert alert-danger margin-center-alert">无效的用户名或密码</div>
+        
+        <div th:if="${param.logout}" class="alert alert-success margin-center-alert">退出登录成功</div>
+
+        <!-- <div class="alert alert-danger margin-center-alert" style="display:none;">验证码错误</div> -->
+		<div class="margin-center-username">
+
+				<label for="inputName" class="col-md-2-self lable-self"><img
+					src="../static/image/user.png" th:src="@{/image/user.png}" /></label>
+				<div class="col-md-10-self">
+					<input type="text" class="form-control form-control-self" id="inputName"
+						name="username" placeholder="用户名" required="true" />
+				</div>
+				<div class="cb"></div>
+		</div>
+		<div class="cb"></div>
+		<div class="form-group">
+			<div class="margin-center-password">
+				<label for="inputPassword" class="col-md-2-self lable-self"><img
+					src="../static/image/lock.png" th:src="@{/image/lock.png}" /></label>
+				<div class="col-md-10-self">
+					<input type="password" name="password" class="form-control form-control-self"
+						id="inputPassword" placeholder="密码" required="true" title="请填写密码" />
+				</div>
+				<div class="cb"></div>
+			</div>
+			<span class="forget_password"><a href="#">忘记密码？</a></span>
+		</div>
+		<!-- <div class="form-group">
+			<div class="margin-center-validata-code">
+				<div class="validate_code">
+					<input type="text" class="form-control form-control-self" id="validate_code" onkeyup="validateCode(this);" placeholder="验证码"/>
+				</div>    			
+				<div class="validate_code_display">
+                     <a href="javascript:void(0);">
+                         <div id="check_code" class="check-code-img" onclick="createCode()"></div>
+                     </a>
+                </div>	
+				<div class="cb"></div>
+			</div>
+			<span class="cannotsee"><a href="#">看不清，换一张</a></span>
+		</div>
+		<div class="form-group">
+			<div class="margin-center-btn">
+				<span  class="remember_password">
+					<input type="checkbox"/><div>自动登录</div>
+				</span>
+				<div class="cb"></div>
+			</div>
+		</div> -->
+		<div class="cb"></div>
+		<hr class="login-hr"/>
+		<div class="form-group">
+			<div class="margin-center-btn">
+				<div class="col-md-6-self">
+					<button type="submit" class="col-md-10 pull-left login-btn login-btn-color">登录</button>
+				</div>
+				<div class="col-md-6-self">
+					<!-- <button type="button" class="col-md-10  pull-right login-btn register-btn-color">注册</button> -->
+					<a th:href="${@environment.getProperty('register.guanhutong')}" type="button" class="btn col-md-10  pull-right login-btn register-btn-color">注册</a>
+				</div>
+				<div class="cb"></div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
